@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flavor Haven - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  <div class="logo">Flavor Haven</div>
+
+  <!-- Hamburger and close icons -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span id="hamburger">&#9776;</span> <!-- ☰ -->
+    <span id="close-icon" style="display:none;">&times;</span> <!-- ✖ -->
+  </div>
+
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+  <section class="hero">
+    <video autoplay muted loop playsinline >
+         <source src="videos/background.mp4" type="video/mp4">
+    </video>
+    <div class="hero-text">
+      <h1>Welcome to Flavor Haven</h1><br>
+      <p>Where Italian meets Mexican cuisine with a modern twist.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Signature Specials</h2>
+    <div class="menu-items">
+      <a href="menu.html#main-course">
+      <div class="item">
+        <img src="images/salmon.jpg" alt="Grilled Salmon">
+        <h3>Grilled Salmon</h3>
+      </div></a>
+      <a href="menu.html#main-course">
+      <div class="item">
+        <img src="images/Chicken-Alfredo.jpg" alt="Pasta Alfredo">
+        <h3>Chicken Alfredo</h3>
+      </div></a>
+      <a href="menu.html#main-course">
+      <div class="item">
+        <img src="images/ravioli.png" alt="Spinach Ravioli">
+        <h3>Cheese Ravioli</h3>
+      </div></a>
+    </div>
+    <div></div>
+    <p><a href="menu.html" class="full-menu-btn">>>> Full Menu <<<</a></p>
+  </section>
+
+  <section class="section book-table-section">
+    <h2>Book a Table</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="date" required>
+      <input type="time" required>
+      <input type="number" min="1" max="20" placeholder="Guests" required>
+      <button type="submit">Reserve</button>
+    </form>
+  </section>
+  <div class="feedback-wrapper">
+        <a href="mailto:support@flavorhaven.com" class="feedback-btn" title="Send Feedback">💬 Send Feedback</a>
+  </div>
+  <footer>
+    <p>&copy; 2025 Flavor Haven. All rights reserved.</p>
+    <p>📍 123 Main St, Fairfax, VA | 📧 support@flavorhaven.com | ☎ +1(123) 456-7890</p>
+  </footer>
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    const hamburger = document.getElementById("hamburger");
+    const closeIcon = document.getElementById("close-icon");
+
+    nav.classList.toggle("show");
+
+    // Toggle icon visibility
+    if (nav.classList.contains("show")) {
+      hamburger.style.display = "none";
+      closeIcon.style.display = "inline";
+    } else {
+      hamburger.style.display = "inline";
+      closeIcon.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>

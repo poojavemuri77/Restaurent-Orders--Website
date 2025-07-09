@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flavor Haven - Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Flavor Haven</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1 id="box">Our Full Fusion Menu</h1>
+    <div class="menu-section">
+      <h2>Appetizers</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="images/zitifrita.png" alt="Ziti Frita">
+        <h3>Ziti Frita</h3>
+        <p>$12 - Crispy fried ziti filled with five cheeses. Served with alfredo and marinara dipping sauces.</p>
+        <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Ziti Frita', 12, 'images/zitifrita.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/mozarella.png" alt="Mozzarella sticks">
+        <h3> Fried Mozzarella</h3>
+        <p>$10 - Fried mozzarella cheese with marinara sauce</p>
+        <button onclick="addToCart(' Fried Mozzarella', 10,'images/mozarella.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Bruschetta.png" alt="Bruschetta">
+        <h3>Bruschetta</h3>
+        <p>$14 - toasted bread with chopped tomatoes, garlic and basil</p>
+        <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Bruschetta', 14, 'images/Bruschetta.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Minipizza.png" alt="Minipizza bites">
+        <h3>Flatbread Mini Pizza bites</h3>
+        <p>$10 - Toasted Flatbread topped with pizza toppings</p>
+        <button onclick="addToCart('Pizza bites', 14, 'images/Minipizza.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/LoadedNachos.png" alt="Loaded Nachos">
+        <h3>Loaded Nachos</h3>
+        <p>$11 - Corn chips, melted cheese, jalapeños, and salsa.</p>
+        <button onclick="addToCart('Loaded Nachos', 11, 'images/LoadedNachos.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Jalapeno Poppers.png" alt="Jalapeño Poppers">
+        <h3>Jalapeño Poppers</h3>
+        <p>$10 - Cheese-stuffed jalapeños with chipotle ranch dip.</p>
+         <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Jalapeño Poppers', 9, 'images/Jalapeno Poppers.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/GuacSalsa.png" alt="Guac Salsa">
+        <h3>Guac Salsa</h3>
+        <p>$10 - Guacamole with side of nachos</p>
+        <button onclick="addToCart('Guac Salsa', 10, 'images/GuacSalsa.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/GarlicBread.png" alt="Garlic Bread">
+        <h3>Garlic Bread</h3>
+        <p>$7 - Bread, mozzarella cheese, topped with garlic and herbs with a side of marinated sauce.</p>
+        <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Garlic Bread', 7, 'images/GarlicBread.png')">Add to Cart</button>
+      </div>
+      </div>
+      </div>
+
+      <div class="menu-section">
+      <h2 id="main-course">Main Course</h2>
+        <div class="menu-items">
+      <div class="item">
+        <img src="images/salmon.jpg" alt="Grilled Salmon">
+        <h3>Grilled Salmon</h3>
+        <p>$22 - Served with herbs and lemon butter sauce.</p>
+        <button onclick="addToCart('Grilled Salmon', 22, 'images/salmon.jpg')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Chicken-Alfredo.jpg" alt="Pasta Alfredo">
+        <h3>Chicken Alfredo</h3>
+        <p>$18 - Creamy chicken alfredo with garlic and parmesan.</p>
+        <button onclick="addToCart('Chicken Alfredo', 18,'images/Chicken-Alfredo.jpg')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/ravioli.png" alt="Spinach Ravioli">
+        <h3>Cheese Ravioli</h3>
+        <p>$20 - Stuffed ravioli with ricotta and creamy cheese.</p>
+        <button onclick="addToCart('Cheese Ravioli', 20, 'images/ravioli.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Tacos">
+        <h3>Tacos al Pastor</h3>
+        <p>$18</p>
+        <button onclick="addToCart('Tacos al Pastor', 14,'https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/quesadilla.png" alt="Quesadilla">
+        <h3>Chicken Quesadilla</h3>
+        <p>$13 - Balance of crispy tortilla, rich cheese, and ridiculously tender chicken.</p>
+        <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Chicken Quesadilla', 13, 'images/quesadilla.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Parmigiana.png" alt="Chicken Parmegiana">
+        <h3>Chicken Parmigiana</h3>
+        <p>$22 - Two lightly fried parmesan-breaded chicken breasts with our homemade marinara and melted Italian cheeses. Served with a side of spaghetti. </p>
+        <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Chicken Parmigiana', 22, 'images/Parmigiana.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+         <img src="images/C-Enchilladas.png" alt="Chicken Enchiladas">
+         <h3>Chicken Enchiladas</h3>
+         <p>$16 - Rolled tortillas with chicken, cheese, and red sauce.</p>
+         <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+         <button onclick="addToCart('Chicken Enchiladas', 16, 'images/C-Enchilladas.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Prawns Fajitas.png" alt="Prawns Fajitas">
+        <h3>Prawns Fajitas</h3>
+        <p>$19 - Tortilla filled with Sizzling grilled prawns with side of sourcream and Salsa.</p>
+        <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Prawns Fajitas', 19, 'images/Prawns Fajitas.png')">Add to Cart</button>
+      </div>
+     </div>
+     </div>
+
+      <div class="menu-section">
+      <h2>Desserts</h2>
+      <div class="menu-items">
+      <div class="item">
+        <img src="images/Tiramasu.png" alt="Tiramisu">
+        <h3>Tiramisu</h3>
+        <p>$9 - Espresso-soaked ladyfingers layered with mascarpone and cocoa.</p>
+        <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Tiramisu', 9, 'images/Tiramasu.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Cannoli.png" alt="Cannoli">
+        <h3>Cannoli</h3>
+        <p>$7 - Fried pastry shell filled with sweetened ricotta cream.</p>
+        <button onclick="addToCart('Cannoli', 7, 'images/Cannoli.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Churros.png" alt="Churros">
+        <h3>Churros</h3>
+        <p>$6 - Cinnamon-sugar fried dough served with chocolate dip.</p>
+          <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Churros', 6, 'images/Churros.png')">Add to Cart</button>
+      </div>
+      </div>
+      </div>
+
+      <div class="menu-section">
+      <h2>Drinks & Beverages</h2>
+      <div class="menu-items">
+      <div class="item">
+        <img src="images/Lemonade.png" alt="Lemonade">
+        <h3>Fresh Lemonade</h3>
+        <p>$5 - House-made with real lemons.</p>
+        <button onclick="addToCart('Lemonade', 5, 'images/Lemonade.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/SP.png" alt="SP">
+        <h3>Strawberry-PassionFruit Lemonade</h3>
+        <p>$5 - Refreshing strawberry-Passionfruit and hint of lime and Mint.</p>
+        <span class="read-more" onclick="toggleText(this)">Read More</span><p></p>
+        <button onclick="addToCart('Stawberry-PassionFruit', 5, 'images/SP.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+         <img src="images/Iced Tea.png" alt="Iced Tea">
+         <h3>Iced Tea</h3>
+         <p>$4 - Freshly brewed iced tea.</p>
+         <button onclick="addToCart('Iced Tea', 4, 'images/Iced Tea.png')">Add to Cart</button>
+      </div>
+      <div class="item">
+         <img src="images/Soda.png" alt="Soft Drink">
+         <h3>Fountain Soda</h3>
+         <p>$3 - Coke, Sprite, or Fanta.</p>
+         <button onclick="addToCart('Fountain Soda', 3, 'images/Soda.png')">Add to Cart</button>
+      </div>
+    </div>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Flavor Haven. All rights reserved.</p>
+    <p>123 Main St, Fairfax, VA | support@flavorhaven.com | +1(123) 456-7890</p>
+  </footer>
+
+  <script>
+      function addToCart(item, price, img) {
+           let cart = JSON.parse(localStorage.getItem("cart")) || [];
+           cart.push({ item, price, img, qty: 1 });
+           localStorage.setItem("cart", JSON.stringify(cart));
+           alert(item + " added to cart!");
+     }
+  </script>
+  <script>
+  function toggleText(el) {
+    const para = el.previousElementSibling;
+    if (para.style.webkitLineClamp === "2") {
+      para.style.webkitLineClamp = "unset";
+      el.innerText = "Less";
+    } else {
+      para.style.webkitLineClamp = "2";
+      el.innerText = "Read More";
+    }
+  }
+</script>
+</body>
+</html>
